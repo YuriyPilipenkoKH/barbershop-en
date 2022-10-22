@@ -1,6 +1,9 @@
 a {
 
-    justify-content: center;
+   justify-content: stretch;
     display: inline-flexbox;
-    align-items: center;
+    align-items: baseline;
+justify-content: space-between;
+
 }
+
