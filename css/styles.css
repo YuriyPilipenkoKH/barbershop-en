@@ -1,6 +1,6 @@
 :root {
-    --main-font: 'Open Sans' sans serif;
-    --secondary-font: 'Raleway' sans serif;
+    --main-font: 'Open Sans', sans serif;
+    --secondary-font: 'Raleway', sans serif;
     --main-txt-cl: #303030;
     --accent-txt-cl: #ff6c00;
     --light-txt-cl: #ffffff;
@@ -11,8 +11,6 @@
     --accent-bg-cl: #ff6c00;
 
     --btn-radius: 25px;
-
-
 }
 body {
     font-family: var(--main-font);
@@ -37,6 +35,16 @@ img {
     margin: 0;
     padding: 0;
 
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 1px solid crimson; 
+
+}
+.header-container {
+    display: flex;
 }
 .main-title {
     font-family: var(--secondary-font);
@@ -67,5 +75,43 @@ img {
     color: var(--main-txt-cl);    
 }
 .title-theme-dark {
-    color: var(g);
+    color: var(--gray-cl);
+
+}
+.undertitle {
+    color: var(--dark-txt-cl);
+}
+.undertitle-theme-dark {
+    color: var(--gray-cl);
+
+}
+.btn {
+    max-width: 250px;
+    min-width: 160px;
+    min-height: 40px; 
+    padding: 11px 19px;
+
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: var(--main-txt-cl);
+    background-color: transparent;
+    border: 1px solid var(--accent-bg-cl);
+    border-radius: var(--btn-radius);
+
+    cursor: pointer;
+
+}
+.btn:hover,
+.btn:focus {
+    background-color: var(--light-txt-cl);
+
+}
+.btn-theme-dark {
+    color: var(--light-txt-cl);
+
 }
