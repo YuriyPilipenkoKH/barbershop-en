@@ -114,3 +114,17 @@ function getSubscriptionPrice(type) {
     // } else {
     //   message = "Access denied, wrong password!";
     // }
+    function checkForSpam(message) {
+      let result;
+      const normalizateMessage = message.toLowerCase();
+      // Change code below this line
+    if (normalizateMessage.includes(`span`)){
+      result = true;
+    } else if 
+    (normalizateMessage.includes(`sale`)){
+      result = true;
+    } else { result = false; 
+           
+      // Change code above this line
+      return result;
+    }
