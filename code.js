@@ -1,7 +1,21 @@
-// Change code below this line
-const orderedQuantity = 6;
-const pricePerDroid = 800;
-const deliveryFee = 50;
-const totalPrice = 4850;
-const message = `You ordered droids worth ${((orderedQuantity * pricePerDroid) + deliveryFee)} credits.
-Delivery (${deliveryFee} credits) is included in total price.`;
+function getSubscriptionPrice(type) {
+    let price;
+    // Change code below this line
+  
+   switch (type) { // Change this line
+      case starter: // Change this line
+        price = 0; // Change this line
+        break;
+  
+      case professional: // Change this line
+        price = 20; // Change this line
+        break;
+  
+      case organization: // Change this line
+        price = 50; // Change this line
+        break;
+    }
+  
+    // Change code above this line
+    return price;
+  }
